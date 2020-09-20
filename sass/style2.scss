@@ -264,7 +264,6 @@ body {
           height: 100%;
           background: #999999;
         }
-        h2,
         h3 {
           font-family: $h_fontstack;
           font-size: 18px;
@@ -277,6 +276,48 @@ body {
             font-weight: 600;
             color: #ff3300;
             margin: 10px 0;
+          }
+        }
+        h2.cd-headline {
+          margin: 0;
+          font-family: $h_fontstack;
+          font-size: 18px;
+          font-weight: 400;
+          color: $h_white;
+          text-transform: capitalize;
+          span {
+            padding: 0.2em 0;
+            display: inline-block;
+            vertical-align: top;
+          }
+          .cd-words-wrapper {
+            display: inline-block;
+            position: relative;
+            text-align: left;
+            b {
+              opacity: 0;
+              display: inline-block;
+              position: absolute;
+              white-space: nowrap;
+              left: 0;
+              top: 0;
+
+              &.is-visible {
+                position: relative;
+              }
+            }
+            .is-visible {
+              opacity: 1;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 2px;
+              height: 100%;
+              background-color: #ffffff;
+            }
           }
         }
       }
