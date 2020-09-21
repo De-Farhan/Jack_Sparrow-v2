@@ -164,6 +164,7 @@ body {
     height: auto;
     background: #e0e4eb !important; }
     .switcher .blast-frame p {
+      color: #232323;
       letter-spacing: 5px;
       text-transform: capitalize; }
     .switcher .blast-frame .blast-colors {
